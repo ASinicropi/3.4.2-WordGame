@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div id=gameTitle>Hangman Game!</div>
+    <div class="spacer"></div>
+    <div id="gameContent">
+      <div id="hangmanPic">
+        <img src="image/IMG_4771.PNG">
+      </div>
+      <form>
+        <input type="text" id="guessLetter"
+        placeholder="Guess a letter"/>
+        <button name="guessButton">Guess</button>
+        <button name="resetButton">New Game</button>
+        <p id="wrongLetter">Wrong Letters:</p>
+      </form>
+      <ul id="letters"></ul>
+        <p id="manLives"></p>
+        <p id="output" class="output"></p>
+    </div>
+  </div>
+  <script src="js/common-words.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
